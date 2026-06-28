@@ -175,7 +175,7 @@ For transparency, the submission output contains a natural-language description 
 To comply with hackathon rules and prevent pushing large files to GitHub, `.gitignore` has been pre-configured to block:
 - Large JSONL logs (`candidates.jsonl`)
 - Raw pre-computed tables (`*.parquet`)
-- Output submission logs (`YOUR_TEAM_ID.csv`)
+- Output submission logs (`UniverseX.csv`)
 - Python environment files, caches, and IDE configs (`.venv/`, `__pycache__/`, `.ipynb_checkpoints/`, `.vscode/`)
 
 ---
