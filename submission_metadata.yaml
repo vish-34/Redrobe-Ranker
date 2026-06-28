@@ -21,10 +21,10 @@ team_members:
 github_repo: "https://github.com/vish-34/Redrobe-Ranker.git"
 
 
-sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+sandbox_link: "https://colab.research.google.com/drive/1H5i1VMNkwuvfDijz5x8m36Ccz6sC1Oxh?usp=sharing"
 
 
-reproduce_command: "Run notebooks/06_submission.ipynb to generate the final submission CSV."
+reproduce_command: "Open notebooks/sandbox_judge.ipynb in Google Colab, click Runtime > Run all, upload candidates.jsonl when prompted, and download the output CSV."
 
 
 # ============================================================================
@@ -44,7 +44,7 @@ compute:
 # AI tools declaration
 # ============================================================================
 ai_tools_used:
-  - "ChatGPt"
+  - "ChatGPT"
 
 ai_usage_summary: |
  Used ChatGPT for architecture discussions, debugging Python code, 
