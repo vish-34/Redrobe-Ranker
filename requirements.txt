@@ -1,0 +1,39 @@
+# ==============================================================================
+# Redrob Ranker - Requirements & Dependencies
+# ==============================================================================
+#
+# DATA REQUIREMENTS:
+# To run this project, the following files must be present in the `data/` directory:
+#
+# 1. data/candidates.jsonl (Required)
+#    - The primary candidate profiles dataset (~487MB, containing structured JSON 
+#      records for candidates including profiles, skill lists, career history, 
+#      and Redrob behavioral engagement signals).
+#
+# 2. data/job_description.md (Required)
+#    - The target Job Description (e.g. Senior AI Engineer - Founding Team)
+#      used as the query document for semantic similarity matching.
+#
+# 3. Intermediate cache parquet files (Generated or pre-computed to speed up runs):
+#    - data/semantic_scores.parquet : Stores computed cosine similarities between 
+#      candidate documents and the job description.
+#    - data/behavior_scores.parquet : Stores computed availability, recruiter interest, 
+#      trust, and engagement scores.
+#    - data/features.parquet         : Contains compiled feature engineered tables.
+#
+# 4. output/YOUR_TEAM_ID.csv (Generated output)
+#    - The final submission file containing the top 100 ranked candidate IDs,
+#      their final scores, and detailed reasoning explanations.
+# ==============================================================================
+
+# Core Machine Learning & Data Processing
+pandas>=2.0.0
+numpy>=1.22.0
+scikit-learn>=1.0.0
+sentence-transformers>=2.2.2
+pyarrow>=10.0.0
+
+# Jupyter Notebook Execution & Development
+ipykernel>=6.0.0
+jupyter>=1.0.0
+tqdm>=4.64.0
