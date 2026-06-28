@@ -1,0 +1,70 @@
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "UniverseX"  
+
+primary_contact:
+  name: "Vishal Borana"
+  email: "vishal23borana@gmail.com"   
+  phone: "+91-8454030044"        
+
+team_members:
+  - name: "Vishal Borana"
+    email: "vishal23borana@gmail.com"
+    role: "ML Engineer, Team Lead"          
+
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/vish-34/Redrobe-Ranker.git"
+
+
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+
+
+reproduce_command: "Run notebooks/06_submission.ipynb to generate the final submission CSV."
+
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Windows PC"                  
+  cpu_cores: 12                                 
+  ram_gb: 16                                   
+  python_version: "3.12"                     
+  os: "Windows 11"                              
+  uses_gpu_for_inference: false                 
+  has_network_during_ranking: false             
+  pre_computation_required: true              
+  pre_computation_time_minutes: 45             
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "ChatGPt"
+
+ai_usage_summary: |
+ Used ChatGPT for architecture discussions, debugging Python code, 
+ feature engineering ideas, documentation, and code review. All ranking logic, 
+ feature engineering, scoring functions, and implementation decisions were verified 
+ and integrated into the final solution. No candidate data was sent to external APIs 
+ during inference.
+
+# ============================================================================
+# Approach summary 
+# ============================================================================
+methodology_summary: |
+  Built a modular candidate ranking pipeline combining semantic retrieval, feature engineering, behavioral scoring, and weighted ranking. Candidate profiles are converted into semantic documents and embedded using the BAAI/bge-small-en-v1.5 Sentence Transformer. Technical features include AI skills, production experience, career quality, Python expertise, embeddings, vector databases, and product-company exposure. Behavioral features model candidate availability, recruiter engagement, trust, and platform activity. A weighted ranking engine combines semantic similarity, technical score, behavior score, product fit, and experience fit to produce the final ranking. Natural-language reasoning is generated for every shortlisted candidate to explain why they were selected.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true       
+  code_is_original_work: true       
+  no_collusion: true                
+  honeypot_check_done: true        
+  reproduction_tested: true         

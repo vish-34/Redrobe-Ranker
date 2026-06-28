@@ -145,7 +145,6 @@ desktop.ini
 
 # Project specific: Ignore heavy datasets & local execution outputs
 data/candidates.jsonl
-data/*.parquet
 data/YOUR_TEAM_ID.csv
 data/*.zip
 data/*.tar.gz
