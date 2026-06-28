@@ -131,7 +131,7 @@ Ensure you have Python 3.10+ installed.
 ### 1. Clone & Set Up Virtual Environment
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Redrobe-Ranker.git
+git clone https://github.com/vish-34/Redrobe-Ranker.git
 cd Redrobe-Ranker
 
 # Create a virtual environment
