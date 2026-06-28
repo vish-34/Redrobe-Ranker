@@ -29,7 +29,7 @@ flowchart TD
     H -->|Technical + Product + Experience Fit| I[Final Weighted Aggregation]
     I --> J[src/ranking.py: rank_candidates]
     J --> K[notebooks/06_submission.ipynb]
-    K -->|Validate & Generate Reasoning| L[data/YOUR_TEAM_ID.csv]
+    K -->|Validate & Generate Reasoning| L[data/UniverseX.csv]
 ```
 
 ---
@@ -131,7 +131,7 @@ Ensure you have Python 3.10+ installed.
 ### 1. Clone & Set Up Virtual Environment
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Redrobe-Ranker.git
+git clone https://github.com/vish-34/Redrobe-Ranker.git
 cd Redrobe-Ranker
 
 # Create a virtual environment
@@ -175,7 +175,7 @@ For transparency, the submission output contains a natural-language description 
 To comply with hackathon rules and prevent pushing large files to GitHub, `.gitignore` has been pre-configured to block:
 - Large JSONL logs (`candidates.jsonl`)
 - Raw pre-computed tables (`*.parquet`)
-- Output submission logs (`YOUR_TEAM_ID.csv`)
+- Output submission logs (`UniverseX.csv`)
 - Python environment files, caches, and IDE configs (`.venv/`, `__pycache__/`, `.ipynb_checkpoints/`, `.vscode/`)
 
 ---
