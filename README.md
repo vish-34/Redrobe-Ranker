@@ -29,7 +29,7 @@ flowchart TD
     H -->|Technical + Product + Experience Fit| I[Final Weighted Aggregation]
     I --> J[src/ranking.py: rank_candidates]
     J --> K[notebooks/06_submission.ipynb]
-    K -->|Validate & Generate Reasoning| L[data/YOUR_TEAM_ID.csv]
+    K -->|Validate & Generate Reasoning| L[data/UniverseX.csv]
 ```
 
 ---
